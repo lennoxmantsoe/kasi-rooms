@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        .search-container {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .background-image {
+            width: 100%;
+            height: 250px; /* Adjust as needed */
+            background-image: url('/assets/list.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .background-image h1 {
+            color: white;
+            font-size: 2em;
+            margin: 0;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Background for text readability */
+            border-radius: 10px;
+        }
+        .search-box {
+            background-color: white;
+            padding: 20px;
+            margin-top: -20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .search-box input {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .search-box button {
+            width: 100%;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        ul{
+            list-style-type: none;
+            text-align: left;
+            padding: 0;
+            margin: 0;
+        }
+
+        li{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            font-family: arial;
+            font-size: 20px;
+            cursor: pointer;
+            letter-spacing: 1px;
+        }
+        li:hover{
+            text-decoration:wavy;
+            background: rgba(0,0,0,0.2); 
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="search-container">
+    <div class="background-image">
+        <h1>Find everything you need.</h1>
+    </div>
+    <div class="search-box">
+        <input type="text" placeholder="Keywords">
+        <button>Search</button>
+    </div>
+    <ul>
+        <% for(var i=0; i < allList.length; i++){%>
+            <li><%= allList[i].item %> </li>
+        <%}%>
+    </ul>
+</div>
+
+
+</body>
+</html>

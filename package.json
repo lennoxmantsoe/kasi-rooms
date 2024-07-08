@@ -1,0 +1,27 @@
+{
+  "name": "innquest",
+  "version": "1.0.0",
+  "description": "kasi rooms",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lennoxmantsoe/kasi-rooms.git"
+  },
+  "keywords": [
+    "kasi"
+  ],
+  "author": "Lennox Mantsoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lennoxmantsoe/kasi-rooms/issues"
+  },
+  "homepage": "https://github.com/lennoxmantsoe/kasi-rooms#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2"
+  }
+}
